@@ -9,6 +9,8 @@ SRC = srcs/Part_I/ft_isalpha.c \
 	  srcs/Part_I/ft_isalnum.c \
 	  srcs/Part_I/ft_isprint.c \
 	  srcs/Part_I/ft_strlen.c \
+	  srcs/Part_I/ft_memset.c \
+	  srcs/Part_I/ft_bzero.c \
 	  srcs/Part_I/ft_toupper.c \
 	  srcs/Part_I/ft_tolower.c \
       srcs/Part_I/ft_strcmp.c \
