@@ -1,6 +1,6 @@
 # 🏗️ Do Betão ao Byte: O Estaleiro de Código em C 🚀
 
-Olá! Bem-vindos ao meu repositório central de desenvolvimento em **C**. 
+Olá! Bem-vindos ao meu repositório central de desenvolvimento em **C**.
 
 Sou um **Engenheiro Civil** em reconversão profissional e este espaço serve como o diário de bordo da minha jornada digital. Aqui guardo todos os projetos oficiais do **Common Core da 42** e as resoluções de algoritmos de plataformas externas.
 
@@ -44,7 +44,7 @@ gcc beecrowd/1001-extremamente-basico.c -o programa
 | Tipo / Plataforma | Objetivo | Estado Atual |
 | :--- | :---: | :---: |
 | 🛡️ 42: Libft | Concluir com 100%+ | 🟢 Em Progresso |
-| 🐝 Beecrowd | Resolver 100 problemas | 🟡 41 / 100 |
+| 🐝 Beecrowd | Resolver 100 problemas | 🟡 58 / 100 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
 
 ---
