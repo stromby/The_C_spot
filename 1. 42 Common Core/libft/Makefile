@@ -17,7 +17,13 @@ SRC = srcs/Part_I/ft_isalpha.c \
 	  srcs/Part_I/ft_strlcat.c \
 	  srcs/Part_I/ft_toupper.c \
 	  srcs/Part_I/ft_tolower.c \
-      srcs/Part_I/ft_strcmp.c \
+	  srcs/Part_I/ft_strchr.c \
+	  srcs/Part_I/ft_strrchr.c \
+      srcs/Part_I/ft_strncmp.c \
+	  srcs/Part_I/ft_memchr.c \
+	  srcs/Part_I/ft_strnstr.c \
+	  srcs/Part_I/ft_atoi.c \
+	  srcs/Part_I/ft_calloc.c \
 	  srcs/Part_II/ft_putchar_fd.c \
       srcs/Part_II/ft_putstr_fd.c \
       srcs/Part_II/ft_putnbr_fd.c

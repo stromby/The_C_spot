@@ -44,7 +44,7 @@ gcc beecrowd/1001-extremamente-basico.c -o programa
 | Tipo / Plataforma | Objetivo | Estado Atual |
 | :--- | :---: | :---: |
 | 🛡️ 42: Libft | Concluir com 100%+ | 🟢 Em Progresso |
-| 🐝 Beecrowd | Resolver 100 problemas | 🟡 58 / 100 |
+| 🐝 Beecrowd | Resolver 100 problemas | 🟡 71 / 100 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
 
 ---
