@@ -1,7 +1,7 @@
 NAME = libft.a
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I.
 
 SRC = srcs/Part_I/ft_isalpha.c \
       srcs/Part_I/ft_isdigit.c \
@@ -24,6 +24,9 @@ SRC = srcs/Part_I/ft_isalpha.c \
 	  srcs/Part_I/ft_strnstr.c \
 	  srcs/Part_I/ft_atoi.c \
 	  srcs/Part_I/ft_calloc.c \
+	  srcs/Part_I/ft_strdup.c \
+	  srcs/Part_II/ft_substr.c \
+	  srcs/Part_II/ft_strjoin.c \
 	  srcs/Part_II/ft_putchar_fd.c \
       srcs/Part_II/ft_putstr_fd.c \
       srcs/Part_II/ft_putnbr_fd.c
@@ -36,7 +39,7 @@ $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -I. -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
