@@ -27,6 +27,8 @@ SRC = srcs/Part_I/ft_isalpha.c \
 	  srcs/Part_I/ft_strdup.c \
 	  srcs/Part_II/ft_substr.c \
 	  srcs/Part_II/ft_strjoin.c \
+	  srcs/Part_II/ft_strtrim.c \
+	  srcs/Part_II/ft_split.c \
 	  srcs/Part_II/ft_putchar_fd.c \
       srcs/Part_II/ft_putstr_fd.c \
       srcs/Part_II/ft_putnbr_fd.c
