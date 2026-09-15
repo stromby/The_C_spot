@@ -29,8 +29,10 @@ SRC = srcs/Part_I/ft_isalpha.c \
 	  srcs/Part_II/ft_strjoin.c \
 	  srcs/Part_II/ft_strtrim.c \
 	  srcs/Part_II/ft_split.c \
+	  srcs/Part_II/ft_itoa.c \
 	  srcs/Part_II/ft_putchar_fd.c \
       srcs/Part_II/ft_putstr_fd.c \
+	  srcs/Part_II/ft_putendl_fd.c \
       srcs/Part_II/ft_putnbr_fd.c
 
 OBJ = $(SRC:.c=.o)

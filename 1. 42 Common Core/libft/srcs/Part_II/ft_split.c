@@ -57,7 +57,7 @@ char	*ft_copy(char const *s, int len)
 	return (word);
 }
 
-char	*ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**array;
 	int		words;
