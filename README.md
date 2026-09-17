@@ -6,36 +6,22 @@ Sou um **Engenheiro Civil** em reconversão profissional e este espaço serve co
 
 ---
 
-## 🎯 Estrutura do Repositório
+🎯 Estrutura do Repositório
 
-Para manter a organização da obra limpa e sem entulho, o repositório está dividido em duas secções principais:
+Para manter a organização limpa e sem entulho, o repositório está dividido em duas secções principais:
 
-### 🏰 1. 42 Common Core
+🏰 1. 42 Common Core
 Projetos oficiais desenvolvidos sob as regras estritas da Norminette e com gestão manual de memória.
-*   📂 `libft/` — A minha primeira biblioteca nativa em C (recriação de funções padrão).
-*   📂 `ft_printf/` — Recriação personalizada da famosa função de output *(brevemente)*.
-*   📂 `get_next_line/` — Função otimizada para ler uma linha de um File Descriptor *(brevemente)*.
 
-### 🐝 2. Desafios de Programação (Maratona Digital)
+    📂 ft_printf/ — Recriação personalizada da famosa função de output.
+        └── 📂 libft/ — (Integrada!) A minha biblioteca nativa em C foi embutida dentro do printf para criar uma biblioteca unificada (libftprintf.a) através de regras de Makefile em cascata.
+    📂 get_next_line/ — Função otimizada para ler uma linha de um File Descriptor (brevemente).
+
+🐝 2. Desafios de Programação (Maratona Digital)
 Resoluções de problemas de lógica e matemática organizados por plataforma.
-*   📂 `beecrowd/` — Resolução de problemas estruturados por nível e categoria.
-*   📂 `outras-plataformas/` — Desafios ocasionais do LeetCode ou HackerRank.
 
----
-
-## 🛠️ Como Compilar e Executar os Desafios
-
-Todos os programas de desafios independentes podem ser compilados usando o `gcc` diretamente no seu terminal Linux:
-
-```bash
-# Compilar o código do Beecrowd (exemplo)
-gcc beecrowd/1001-extremamente-basico.c -o programa
-
-# Executar o binário gerado
-./programa
-```
-
-*Nota: Os projetos da 42 contêm os seus próprios `Makefile` com as flags padrão (`-Wall -Wextra -Werror`).*
+    📂 beecrowd/ — Resolução de problemas estruturados por nível (ex: Árvore de Natal 1768, etc.).
+    📂 outras-plataformas/ — Desafios ocasionais do LeetCode ou HackerRank.
 
 ---
 
@@ -44,7 +30,7 @@ gcc beecrowd/1001-extremamente-basico.c -o programa
 | Tipo / Plataforma | Objetivo | Estado Atual |
 | :--- | :---: | :---: |
 | 🛡️ 42: Libft | Concluir com 100%+ | 🟢 Em Progresso |
-| 🐝 Beecrowd | Resolver todos os problemas | 🟡 146 / 2430 |
+| 🐝 Beecrowd | Resolver todos os problemas | 🟡 156 / 2430 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
 
 ---
