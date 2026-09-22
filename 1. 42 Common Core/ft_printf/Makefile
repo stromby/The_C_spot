@@ -9,12 +9,13 @@ CFLAGS      = -Wall -Wextra -Werror -I includes -I libft/includes
 LIBFT_DIR   = libft
 LIBFT       = $(LIBFT_DIR)/libft.a
 
-# Ficheiros de Código Fonte do ft_printf
+# Ficheiro de Cabeçalho do printf para detetar alterações
+HEADER      = includes/ft_printf.h
+
+# Ficheiros de Código Fonte do ft_printf (Corrigido para os teus ficheiros reais)
 SRC_DIR     = srcs
 SRC         = $(SRC_DIR)/ft_printf.c \
-              $(SRC_DIR)/ft_print_utils.c \
-              $(SRC_DIR)/ft_print_nbr.c \
-              $(SRC_DIR)/ft_print_hex.c
+              $(SRC_DIR)/ft_printf_utils.c
 
 # Transformação dos ficheiros .c em .o
 OBJ         = $(SRC:.c=.o)
@@ -28,9 +29,7 @@ all: $(NAME)
 
 # Como criar a libftprintf.a
 $(NAME): $(LIBFT) $(OBJ)
-	@# 1. Copia a libft.a para a raiz com o novo nome obrigatório
 	cp $(LIBFT) $(NAME)
-	@# 2. Adiciona os objetos do printf dentro desta nova biblioteca
 	$(AR) $(NAME) $(OBJ)
 	@echo "✨ Biblioteca $(NAME) criada com sucesso!"
 
@@ -39,7 +38,8 @@ $(LIBFT):
 	@make -C $(LIBFT_DIR)
 
 # Como compilar cada ficheiro .c do printf individualmente em .o
-%.o: %.c
+# 💡 Adicionada a dependência do $(HEADER) para recompilar se o .h mudar
+%.o: %.c $(HEADER)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Limpa os ficheiros objetos (.o) do printf e da libft
@@ -59,3 +59,4 @@ re: fclean all
 
 # Proteção contra ficheiros com nomes iguais às regras
 .PHONY: all clean fclean re
+
