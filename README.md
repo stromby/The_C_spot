@@ -13,14 +13,15 @@ Para manter a organização limpa e sem entulho, o repositório está dividido e
 🏰 1. 42 Common Core
 Projetos oficiais desenvolvidos sob as regras estritas da Norminette e com gestão manual de memória.
 
-    📂 ft_printf/ — Recriação personalizada da famosa função de output.
-        └── 📂 libft/ — (Integrada!) A minha biblioteca nativa em C foi embutida dentro do printf para criar uma biblioteca unificada (libftprintf.a) através de regras de Makefile em cascata.
-    📂 get_next_line/ — Função otimizada para ler uma linha de um File Descriptor (brevemente).
+    📂 ft_printf/ — Recriação da famosa função de output formatado de C (Concluído! 🎉).
+        └── 📂 libft/ — (Integrada!) A minha biblioteca nativa em C foi totalmente embutida dentro do printf, gerando a biblioteca estática final (libftprintf.a) através de Makefiles modulares.
+    📂 get_next_line/ — Função otimizada para ler texto linha a linha a partir de um File Descriptor utilizando variáveis estáticas e gestão rigorosa de memória (Concluído! 🎉).
+    📂 push_swap/ — Algoritmo de ordenação de dados numa stack com foco em otimização e complexidade temporal (Em desenvolvimento... 🚀).
 
 🐝 2. Desafios de Programação (Maratona Digital)
 Resoluções de problemas de lógica e matemática organizados por plataforma.
 
-    📂 beecrowd/ — Resolução de problemas estruturados por nível (ex: Árvore de Natal 1768, etc.).
+    📂 beecrowd/ — Resolução de problemas estruturados por tipo/nível (ex: 1 - Beginner / 1000 - Hello World!).
     📂 outras-plataformas/ — Desafios ocasionais do LeetCode ou HackerRank.
 
 ---
@@ -30,7 +31,7 @@ Resoluções de problemas de lógica e matemática organizados por plataforma.
 | Tipo / Plataforma | Objetivo | Estado Atual |
 | :--- | :---: | :---: |
 | 🛡️ 42: Libft | Concluir com 100%+ | 🟢 Em Progresso |
-| 🐝 Beecrowd | Resolver todos os problemas | 🟡 156 / 2430 |
+| 🐝 Beecrowd | Resolver todos os problemas | 🟡 170 / 2430 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
 
 ---
