@@ -30,9 +30,18 @@ Resoluções de problemas de lógica e matemática organizados por plataforma.
 
 | Tipo / Plataforma | Objetivo | Estado Atual |
 | :--- | :---: | :---: |
-| 🛡️ 42: Libft | Concluir com 100%+ | 🟢 Em Progresso |
-| 🐝 Beecrowd | Resolver todos os problemas | 🟡 170 / 2430 |
+| 🛡️ 42: Libft | Concluir com 100%+ | ✅ Concluído |
+| 🖨️ 42: ft_printf | Recriar o printf original | ✅ Concluído |
+| 📜 42: get_next_line | Ler linhas de um File Descriptor | ✅ Concluído |
+| 🔄 42: push_swap | Ordenar dados eficientemente | 🟡 Em Progresso (75%) |
+| 🐝 Beecrowd | Resolver todos os problemas | 🟡 175 / 2430 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
+
+### 🔄 Status do Push_Swap:
+- [x] Parsing & Verificação de Erros básicos
+- [x] Indexação da Stack (Algoritmo de Procura do Menor)
+- [x] Algoritmos para pequenas stacks (2, 3, 4 e 5 elementos)
+- [ ] Algoritmo Turco para grandes volumes (> 5 elementos)
 
 ---
 
