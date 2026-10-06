@@ -6,7 +6,7 @@
 /*   By: hmoura <hmoura@42porto.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 12:10:20 by hmoura            #+#    #+#             */
-/*   Updated: 2026/09/29 18:00:54 by hmoura           ###   ########.fr       */
+/*   Updated: 2026/10/06 16:49:33 by hmoura           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ void	push_min_to_b(t_stack **stack_a, t_stack **stack_b, int target_index)
 			ra(stack_a);
 			pos--;
 		}
-		pb(stack_a, stack_b);
+		pb(stack_b, stack_a);
 	}
 	else
 	{
@@ -83,7 +83,7 @@ void	push_min_to_b(t_stack **stack_a, t_stack **stack_b, int target_index)
 			rra(stack_a);
 			pos++;
 		}
-		pb(stack_a, stack_b);
+		pb(stack_b, stack_a);
 	}
 }
 

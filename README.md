@@ -16,7 +16,7 @@ Projetos oficiais desenvolvidos sob as regras estritas da Norminette e com gest�
     📂 ft_printf/ — Recriação da famosa função de output formatado de C (Concluído! 🎉).
         └── 📂 libft/ — (Integrada!) A minha biblioteca nativa em C foi totalmente embutida dentro do printf, gerando a biblioteca estática final (libftprintf.a) através de Makefiles modulares.
     📂 get_next_line/ — Função otimizada para ler texto linha a linha a partir de um File Descriptor utilizando variáveis estáticas e gestão rigorosa de memória (Concluído! 🎉).
-    📂 push_swap/ — Algoritmo de ordenação de dados numa stack com foco em otimização e complexidade temporal (Em desenvolvimento... 🚀).
+    📂 push_swap/ — Algoritmo de ordenação de dados numa stack com foco em otimização e complexidade temporal (Concluído! 🎉).
 
 🐝 2. Desafios de Programação (Maratona Digital)
 Resoluções de problemas de lógica e matemática organizados por plataforma.
@@ -33,15 +33,9 @@ Resoluções de problemas de lógica e matemática organizados por plataforma.
 | 🛡️ 42: Libft | Concluir com 100%+ | ✅ Concluído |
 | 🖨️ 42: ft_printf | Recriar o printf original | ✅ Concluído |
 | 📜 42: get_next_line | Ler linhas de um File Descriptor | ✅ Concluído |
-| 🔄 42: push_swap | Ordenar dados eficientemente | 🟡 Em Progresso (75%) |
-| 🐝 Beecrowd | Resolver todos os problemas | 🟡 175 / 2430 |
+| 🔄 42: push_swap | Ordenar dados eficientemente | ✅ Concluído |
+| 🐝 Beecrowd | Resolver todos os problemas | 🟡 189 / 2430 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
-
-### 🔄 Status do Push_Swap:
-- [x] Parsing & Verificação de Erros básicos
-- [x] Indexação da Stack (Algoritmo de Procura do Menor)
-- [x] Algoritmos para pequenas stacks (2, 3, 4 e 5 elementos)
-- [ ] Algoritmo Turco para grandes volumes (> 5 elementos)
 
 ---
 

@@ -6,7 +6,7 @@
 /*   By: hmoura <hmoura@42porto.com>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 12:10:30 by hmoura            #+#    #+#             */
-/*   Updated: 2026/09/29 17:51:13 by hmoura           ###   ########.fr       */
+/*   Updated: 2026/10/06 20:19:26 by hmoura           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,27 @@
 # include <stdlib.h>
 # include "libft.h"
 # include <limits.h>
-# include <stdio.h> // REMOVER //
 
 typedef struct s_stack
 {
 	int				value;
 	int				index;
+	int				pos;
+	int				above_median;
+	int				push_cost;
+	struct s_stack	*target_node;
 	struct s_stack	*next;
 }	t_stack;
 
 /* stack_utils.c */
-t_stack	*stack_new(int value);
-t_stack	*stack_last(t_stack *lst);
 void	stack_add_back(t_stack **stack, t_stack *new_node);
 int		stack_size(t_stack *stack);
 void	index_stack(t_stack *stack);
+
+/* stack_utils_2.c */
+t_stack	*stack_new(int value);
+t_stack	*stack_last(t_stack *lst);
+t_stack	*find_min_node(t_stack *stack);
 
 /* error_utils.c */
 void	free_matrix(char **matrix);
@@ -71,5 +77,16 @@ void	push_min_to_b(t_stack **stack_a, t_stack **stack_b, int target_index);
 void	sort_small(t_stack **stack_a, t_stack **stack_b);
 
 /* sort_bigs.c */
+void	move_cheapest_to_b(t_stack **stack, t_stack **stack_b);
+void	move_b_to_a(t_stack **stack_a, t_stack **stack_b);
+void	turk_algorithm(t_stack **stack_a, t_stack **stack_b);
+
+/* sort_bigs_utils.c */
+void	set_current_pos(t_stack *stack);
+void	calculate_prices(t_stack *stack_a, t_stack *stack_b);
+
+/* sort_bigs_targets.c */
+void	set_target_a(t_stack *stack_a, t_stack *stack_b);
+void	set_target_b(t_stack *stack_a, t_stack *stack_b);
 
 #endif
