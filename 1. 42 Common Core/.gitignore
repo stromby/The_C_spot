@@ -1,0 +1,15 @@
+# Bloquear ficheiros compilados em qualquer subpasta
+*.o
+*.a
+*.gch
+
+# Bloquear executáveis específicos do Common Core
+push_swap
+checker_linux
+checker_Mac
+a.out
+
+# Bloquear ficheiros de configuração de editores e do sistema
+.vscode/
+.DS_Store
+*.swp
