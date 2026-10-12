@@ -18,7 +18,13 @@ Projetos oficiais desenvolvidos sob as regras estritas da Norminette e com gest�
     📂 get_next_line/ — Função otimizada para ler texto linha a linha a partir de um File Descriptor utilizando variáveis estáticas e gestão rigorosa de memória (Concluído! 🎉).
     📂 push_swap/ — Algoritmo de ordenação de dados numa stack com foco em otimização e complexidade temporal (Concluído! 🎉).
 
-🐝 2. Desafios de Programação (Maratona Digital)
+🕹️ 2. Oficina de Jogos (Laboratório de Treino)
+Mini-jogos desenvolvidos do zero em C puro para treinar lógica de programação, controlo de buffers (`stdin`), tabelas ASCII e renderização em modo texto adaptada a terminais modernos.
+
+    📂 guess_the_number/ — Jogo de adivinhação blindado contra inputs inválidos e com interface CLI interativa.
+    📂 tic_tac_toe/ — O clássico Jogo do Galo renderizado com caracteres UTF-8 Box-Drawing e lógica matricial linearizada.
+
+🐝 3. Desafios de Programação (Maratona Digital)
 Resoluções de problemas de lógica e matemática organizados por plataforma.
 
     📂 beecrowd/ — Resolução de problemas estruturados por tipo/nível (ex: 1 - Beginner / 1000 - Hello World!).
@@ -29,11 +35,13 @@ Resoluções de problemas de lógica e matemática organizados por plataforma.
 ## 🗺️ O Meu Progresso
 
 | Tipo / Plataforma | Objetivo | Estado Atual |
-| :--- | :---: | :---: |
+| :--- | :--- | :---: |
 | 🛡️ 42: Libft | Concluir com 100%+ | ✅ Concluído |
 | 🖨️ 42: ft_printf | Recriar o printf original | ✅ Concluído |
 | 📜 42: get_next_line | Ler linhas de um File Descriptor | ✅ Concluído |
 | 🔄 42: push_swap | Ordenar dados eficientemente | ✅ Concluído |
+| 🎯 Jogo: Guess The Number | Validação estrita de tipos e CLI dinâmico | ✅ Concluído |
+| ❌ Jogo: Tic-Tac-Toe | Renderização UTF-8 e alinhamento de memória | ✅ Concluído |
 | 🐝 Beecrowd | Resolver todos os problemas | 🟡 189 / 2430 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
 
