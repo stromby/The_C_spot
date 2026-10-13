@@ -1,15 +1,15 @@
 # ❌ Jogo do Galo (Tic-Tac-Toe) ⭕
 
-Uma recriação modular do clássico Jogo do Galo em **C**, focada em design de interfaces CLI limpas e otimização de arrays lineares para simulação tridimensional.
+Uma recriação modular e robusta do clássico Jogo do Galo desenvolvida em **C puro**. O projeto foca-se na linearização de matrizes e no alinhamento de memória para suportar elementos gráficos expandidos (UTF-8 Multi-byte) sem corromper o alinhamento da interface na consola.
 
-## 🛠️ Objetivos Técnicos do Projeto
-- **Modularização de Código:** Divisão total das responsabilidades do programa em funções independentes e puras (`print_board`, `is_valid`, `check_game_over`), garantindo que não existem variáveis globais.
-- **Estruturas de Dados Dinâmicas (1-Based Indexing):** Alinhamento inteligente do array `char board[10]` com o índice `0` em modo *padding*, permitindo mapear os inputs diretos do utilizador (1 a 9) sem a necessidade de correções matemáticas (`index - 1`) na lógica de verificação.
-- **Design UTF-8 Avançado (Box-Drawing):** Construção da interface gráfica em modo texto através de carateres contínuos (`┌`, `─`, `┼`, `┐`) e tratamento de strings constantes (`const char*`) para compensação da largura de bytes de emojis expansivos (2-width), eliminando o clássico problema de desalinhamento de tabelas na consola.
-- **Prevenção de Race Conditions de Estado:** Controlo absoluto na alternância de turnos (`player = !player`) através de validações Booleanas, impossibilitando que a flag do vencedor seja corrompida se o jogo terminar na última jogada disponível.
+## 🕹️ Visual do Jogo (CLI Preview)
 
-## 🕹️ Visual do Jogo
+### Estado Intermédio do Tabuleiro
 ```text
+┌─────────────────────────────────────────┐
+│             ❌  JOGO DO GALO  ⭕        │
+└─────────────────────────────────────────┘
+
              ┌────┬────┬────┐
              │ ❌ │ 2  │ ⭕ │
              ├────┼────┼────┤
@@ -17,9 +17,33 @@ Uma recriação modular do clássico Jogo do Galo em **C**, focada em design de 
              ├────┼────┼────┤
              │ 7  │ 8  │ 9  │
              └────┴────┴────┘
+
+	👉 Turn: Player 1 (⭕)
+───────────────────────────────────────────
+Select a position (1-9):
 ```
 
-### Como Compilar e Executar (Linux/macOS)
+### Telas de Conclusão de Estado
+```text
+┌─────────────────────────────────────────┐
+│      🎉  CONGRATULATIONS! WINNER! 🎉    │
+├─────────────────────────────────────────┤
+│  🏆 Player 2 (❌) dominated the board!  │
+│  ✨ Spectacular victory!                │
+└─────────────────────────────────────────┘
+```
+
+## 🛠️ Objetivos Técnicos e Implementação
+
+- **Linearização de Matrizes (1-Based Indexing):** Utilização de um array unidimensional de 10 posições (`char board[10]`) com um elemento de *padding* no índice `0`. Esta técnica elimina a necessidade de aritmética de desfasamento (`index - 1`) em todo o código, permitindo que a entrada direta do jogador corresponda exatamente à célula de memória pretendida.
+- **Compensação Dinâmica de Bytes (Double-Width Characters):** Emojis Unicode complexos (como ❌ e ⭕) ocupam mais bytes de memória e espaço de renderização do que caracteres normais da tabela ASCII. A função de tradução `trans_char` devolve ponteiros imutáveis (`const char*`) contendo espaços embutidos à direita dos números normais (`"1 "`), forçando todas as células a terem o mesmo tamanho exato no terminal.
+- **Validação Cruzada de Dupla Condição:** A função `is_valid` atua de forma recursiva no buffer para garantir que a jogada cumpre dois requisitos em simultâneo: pertencer ao intervalo numérico válido da tabela ASCII (`'1'` a `'9'`) e não colidir com posições previamente marcadas no array de estado.
+- **Algoritmo de Fim de Jogo Imutável:** Varredura imediata das 8 combinações de vitória (linhas, colunas e diagonais) e ciclo complementar de verificação de esvaziamento de dados para determinação matemática de empates (*Velha*).
+
+## 🚀 Como Compilar e Correr
+
+Compilação limpa sem avisos utilizando o compilador GCC:
+
 ```bash
 gcc -Wall -Werror -Wextra tic_tac_toe.c -o tic_tac_toe
 ./tic_tac_toe

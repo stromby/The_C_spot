@@ -7,7 +7,7 @@
 #include <windows.h>
 #endif
 
-#define CLEAR_SCREEN() printf("\033[H\033[J")
+#define CLEAR_SCREEN() printf("\033[2J\033[H\033[3J")
 #define CLEAN_BUFFER() { int c_garbage; while ((c_garbage = getchar()) != '\n' && c_garbage != EOF); }
 
 

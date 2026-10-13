@@ -23,6 +23,7 @@ Mini-jogos desenvolvidos do zero em C puro para treinar lógica de programação
 
     📂 guess_the_number/ — Jogo de adivinhação blindado contra inputs inválidos e com interface CLI interativa.
     📂 tic_tac_toe/ — O clássico Jogo do Galo renderizado com caracteres UTF-8 Box-Drawing e lógica matricial linearizada.
+	📂 wordle/ — O famoso jogo de adivinhação de palavras de 5 letras em modo multilíngue (EN/PT). Integra o meu get_next_line nativo para ler os dicionários e implementa um algoritmo de dupla passagem para gerir o histórico de cores ANSI.
 
 🐝 3. Desafios de Programação (Maratona Digital)
 Resoluções de problemas de lógica e matemática organizados por plataforma.
@@ -42,7 +43,8 @@ Resoluções de problemas de lógica e matemática organizados por plataforma.
 | 🔄 42: push_swap | Ordenar dados eficientemente | ✅ Concluído |
 | 🎯 Jogo: Guess The Number | Validação estrita de tipos e CLI dinâmico | ✅ Concluído |
 | ❌ Jogo: Tic-Tac-Toe | Renderização UTF-8 e alinhamento de memória | ✅ Concluído |
-| 🐝 Beecrowd | Resolver todos os problemas | 🟡 189 / 2430 |
+| 🟩 Jogo: Wordle Multilíngue | Algoritmo de 2 passagens, GNL integrado e Makefile | ✅ Concluído |
+| 🐝 Beecrowd | Resolver todos os problemas | 🟡 201 / 250 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
 
 ---
