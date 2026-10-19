@@ -1,7 +1,6 @@
 #ifndef WORDLE_H
 # define WORDLE_H
 
-// 1. Bibliotecas do Sistema (Estritas para o funcionamento do Jogo)
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
@@ -9,14 +8,13 @@
 # include <time.h>
 #include <string.h>
 
-// 2. Macros de Configuração Visual
 # define GREEN_BG  "\033[42;30m"
 # define YELLOW_BG "\033[43;30m"
 # define GREY_BG   "\033[100;37m"
 # define RESET     "\033[0m"
 # define CLEAR_SCREEN() printf("\033[2J\033[H\033[3J")
 
-// 3. Protótipos do teu ficheiro get_next_line.c
+// get_next_line.c
 char	*get_next_line(int fd);
 int		ft_strlen(const char *str);
 char	*ft_strchr(const char *str, int c);
