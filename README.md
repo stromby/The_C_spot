@@ -22,9 +22,9 @@ Projetos oficiais desenvolvidos sob as regras estritas da Norminette e com gest�
 Mini-jogos desenvolvidos do zero em C puro para treinar lógica de programação, controlo de buffers (`stdin`), tabelas ASCII e renderização em modo texto adaptada a terminais modernos.
 
     📂 guess_the_number/ — Jogo de adivinhação blindado contra inputs inválidos e com interface CLI interativa.
+	📂 minesweeper/ — O clássico Campo Minado com algoritmo de inundação recursiva (Flood Fill) para propagação de células vazias, controlo de tempo dinâmico e suporte UTF-8 na consola.
     📂 tic_tac_toe/ — O clássico Jogo do Galo renderizado com caracteres UTF-8 Box-Drawing e lógica matricial linearizada.
 	📂 wordle/ — O famoso jogo de adivinhação de palavras de 5 letras em modo multilíngue (EN/PT). Integra o meu get_next_line nativo para ler os dicionários e implementa um algoritmo de dupla passagem para gerir o histórico de cores ANSI.
-	📂 minesweeper/ — O clássico Campo Minado com algoritmo de inundação recursiva (Flood Fill) para propagação de células vazias, controlo de tempo dinâmico e suporte UTF-8 na consola.
 
 🐝 3. Desafios de Programação (Maratona Digital)
 Resoluções de problemas de lógica e matemática organizados por plataforma.
@@ -43,10 +43,10 @@ Resoluções de problemas de lógica e matemática organizados por plataforma.
 | 📜 42: get_next_line | Ler linhas de um File Descriptor | ✅ Concluído |
 | 🔄 42: push_swap | Ordenar dados eficientemente | ✅ Concluído |
 | 🎯 Jogo: Guess The Number | Validação estrita de tipos e CLI dinâmico | ✅ Concluído |
+| 💣 Jogo: Minesweeper | Inundação recursiva (Flood Fill) e cronómetro dinâmico | ✅ Concluído |
 | ❌ Jogo: Tic-Tac-Toe | Renderização UTF-8 e alinhamento de memória | ✅ Concluído |
 | 🟩 Jogo: Wordle Multilíngue | Algoritmo de 2 passagens, GNL integrado e Makefile | ✅ Concluído |
-| 💣 Jogo: Minesweeper	Inundação recursiva (Flood Fill) e cronómetro dinâmico	✅ Concluído |
-| 🐝 Beecrowd | Resolver todos os problemas | 🟡 201 / 250 |
+| 🐝 Beecrowd | Resolver o maximo de problemas e subir no ranking | Rank #26 🇵🇹 |
 | 🚀 Sobreviver aos Ponteiros | Não ter `SegFault` numa semana | 🔥 A lutar diariamente |
 
 ---
